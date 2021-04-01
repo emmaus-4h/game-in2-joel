@@ -151,7 +151,7 @@ function setup() {
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
   background('zwart');
-}
+} 
 
 
 /**

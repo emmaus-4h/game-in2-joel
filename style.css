@@ -17,3 +17,8 @@ html, body {
    */ 
   margin: 0px;
 }
+
+.p5Canvas {
+  height: 100% !important;
+  max-width: 100% !important;
+}

@@ -188,3 +188,37 @@ function draw() {
       break;
   }
 }
+
+// HowtoKeyboard
+// voorbeeld hoe je je toetsenbord in spelletjes kunt gebruiken
+
+var x = 400;
+var y = 200;
+// zie keycode.info voor meer codes van toetsen
+var KEY_LEFT = 37;
+var KEY_RIGHT = 39;
+
+function setup() {
+  createCanvas(800,450);
+  background('blue');
+}
+
+function draw() {
+  // kijk welke toetsen zijn ingedrukt en pas x en y aan
+  if (keyIsDown(KEY_LEFT)) {
+    x = x - 1;
+  }
+  if (keyIsDown(KEY_RIGHT)) {
+    x = x + 1;
+  }  
+  if (keyIsDown(KEY_UP)) {
+    y = y + 1;
+  }
+  if (keyIsDown(KEY_DOWN)) {
+    y = y - 1;
+  }
+  // teken scherm
+  background("yellow"); // wis achtergrond
+  fill("white");
+  ellipse (x, y, 50, 50); // teken speler
+}

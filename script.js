@@ -197,7 +197,8 @@ var y = 200;
 // zie keycode.info voor meer codes van toetsen
 var KEY_LEFT = 37;
 var KEY_RIGHT = 39;
-
+var KEY_UP = 38;
+var KEY_DOWN = 40;
 function setup() {
   createCanvas(800,450);
   background('blue');
@@ -212,10 +213,10 @@ function draw() {
     x = x + 1;
   }  
   if (keyIsDown(KEY_UP)) {
-    y = y + 1;
+    y = y - 1;
   }
   if (keyIsDown(KEY_DOWN)) {
-    y = y - 1;
+    y = y + 1;
   }
   // teken scherm
   background("yellow"); // wis achtergrond

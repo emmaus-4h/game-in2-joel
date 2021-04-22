@@ -207,19 +207,21 @@ function setup() {
 function draw() {
   // kijk welke toetsen zijn ingedrukt en pas x en y aan
   if (keyIsDown(KEY_LEFT)) {
-    x = x - 1;
+    x = x - 2;
   }
   if (keyIsDown(KEY_RIGHT)) {
-    x = x + 1;
+    x = x + 2;
   }  
   if (keyIsDown(KEY_UP)) {
-    y = y - 1;
+    y = y - 2;
   }
   if (keyIsDown(KEY_DOWN)) {
-    y = y + 1;
+    y = y + 2;
   }
   // teken scherm
-  background("yellow"); // wis achtergrond
+  background("lightblue"); // wis achtergrond
   fill("white");
   ellipse (x, y, 50, 50); // teken speler
+  fill("green");
+  rect (0, 430, 800, 20); // teken speler
 }

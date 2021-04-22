@@ -220,8 +220,10 @@ function draw() {
   }
   // teken scherm
   background("lightblue"); // wis achtergrond
-  fill("white");
+  fill("gray");
   ellipse (x, y, 50, 50); // teken speler
   fill("green");
   rect (0, 430, 800, 20); // teken speler
+  fill("yellow");
+  ellipse (0, 0, 60, 60); // teken speler
 }

@@ -221,7 +221,7 @@ function draw() {
   // teken scherm
   background("lightblue"); // wis achtergrond
   fill("gray");
-  ellipse (x, y, 50, 50); // teken speler
+  rect (x, y, 40, 40); // teken speler
   fill("green");
   rect (0, 430, 800, 20); // teken speler
   fill("yellow");
